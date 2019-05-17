@@ -3,3 +3,5 @@
 .swo
 .o
 .DS_Store?
+node_modules
+.vscode
