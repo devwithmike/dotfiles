@@ -26,4 +26,4 @@ highlight ColorColumn ctermbg=240
 nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar> :let @/=_s<Bar><CR>
 set t_Co=256
 set comments=sl:/*,mb:\ *,elx:\ */
-colo GruvBox
+colo challengerdeep
