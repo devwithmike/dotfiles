@@ -1,5 +1,7 @@
 # My dotfiles
 
+## CAUTION - Contact me before using PLEASE
+
 This repo is used to install all my dotfiles and plugins/themes i like to use on a daily basis, and because i switch between PC's often.
 ### Installation
 ```
