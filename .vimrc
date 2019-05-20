@@ -5,10 +5,9 @@ set backspace=indent,eol,start
 set autoindent
 set copyindent
 set smartindent
-set softtabstop=4
 set shiftwidth=4
 set tabstop=4
-set expandtab
+set cindent
 set showmatch
 set visualbell
 set incsearch
