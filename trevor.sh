@@ -18,7 +18,7 @@ echo "----- Global -----";
 read -p 'Username: ' uservar;
 echo "export USER=$uservar" >> ~/.bashrc;
 cat .bashrc >> ~/.bashrc
-echo "Bashrc";
+exec bash;
 
 echo "----- Github -----";
 read -p 'Github username: ' guser;
