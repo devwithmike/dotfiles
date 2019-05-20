@@ -19,6 +19,13 @@ read -p 'Username: ' uservar;
 echo "export USER=$uservar" >> ~/.bashrc;
 cat .bashrc >> ~/.bashrc
 echo "Bashrc";
+
+echo "----- Github -----";
+read -p 'Github username: ' guser;
+read -p 'Repo Name: ' repo;
+git clone "https://github.com/${guser}/${repo}" ~/Desktop/${repo}
+
+echo "----- Setup -----";
 cp -R .vim ~/;
 echo "Color + 42Header";
 cp .vimrc ~/;
