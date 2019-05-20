@@ -10,6 +10,7 @@ case $OS in
     osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to true';
     echo "DarkMode";
     defaults write com.apple.dock static-only -bool true; killall Dock;
+    cp .bashrc ~
     ;;
   *) ;;
 esac
@@ -17,7 +18,6 @@ esac
 echo "----- Global -----";
 read -p 'Username: ' uservar;
 echo "export USER=$uservar" >> ~/.bashrc;
-cat .bashrc >> ~/.bashrc
 exec bash;
 
 echo "----- Github -----";
