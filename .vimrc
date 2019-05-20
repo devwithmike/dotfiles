@@ -25,7 +25,7 @@ highlight ColorColumn ctermbg=240
 if (has("termguicolors"))
  set termguicolors
 endif
-colo tender
+colo monokai
 let g:gitgutter_map_keys = 0
 set updatetime=100
 
