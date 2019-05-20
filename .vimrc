@@ -21,6 +21,7 @@ set colorcolumn=80
 set comments=sl:/*,mb:\ *,elx:\ */
 syntax on
 highlight ColorColumn ctermbg=240
+se mouse+=a
 
 if (has("termguicolors"))
  set termguicolors
