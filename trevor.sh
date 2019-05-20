@@ -9,6 +9,7 @@ case $OS in
     echo "----- MacOS -----";
     osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to true';
     echo "DarkMode";
+    defaults write com.apple.dock static-only -bool true; killall Dock;
     ;;
   *) ;;
 esac
