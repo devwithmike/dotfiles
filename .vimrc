@@ -2,28 +2,35 @@ set number
 set ruler
 set undolevels=1000
 set backspace=indent,eol,start
-
 set autoindent
 set copyindent
-set shiftwidth=4
 set smartindent
 set softtabstop=4
-
+set shiftwidth=4
+set tabstop=4
+set expandtab
 set showmatch
 set visualbell
 set incsearch
-
-syntax on
 set title
 set showcmd
-
+set cursorline
 set nobackup
 set noswapfile
-
-nnoremap <F6> :Stdheader<CR>
 set colorcolumn=80
-highlight ColorColumn ctermbg=240
-nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar> :let @/=_s<Bar><CR>
-set t_Co=256
 set comments=sl:/*,mb:\ *,elx:\ */
-colo monokai
+syntax on
+highlight ColorColumn ctermbg=240
+
+if (has("termguicolors"))
+ set termguicolors
+endif
+colo tender
+let g:gitgutter_map_keys = 0
+set updatetime=100
+
+inoremap jj <ESC>
+nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar> :let @/=_s<Bar><CR>
+autocmd VimEnter * NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+autocmd VimEnter * NERDTree | wincmd p

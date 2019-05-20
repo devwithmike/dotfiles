@@ -1,8 +1,30 @@
-#!/bin/bash
-cp .vimrc ~/
-cp .gitignore ~/
-cp -R .vim ~/ 
-git config --global core.excludesfile ~/.gitignore
-if [[ "$OSTYPE" == "darwin"* ]]; then
-osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to true'
-fi
+#!/usr/bin/sh 
+
+OS="`uname`"
+case $OS in
+  'Linux')
+    echo "----- Linux -----";
+    ;;
+  'Darwin')
+    echo "----- MacOS -----";
+    osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to true';
+    echo "DarkMode";
+    ;;
+  *) ;;
+esac
+
+echo "----- Global -----";
+read -p 'Username: ' uservar;
+echo "export USER=$uservar" >> ~/.bashrc;
+cat .bashrc >> ~/.bashrc
+echo "Bashrc";
+cp -R .vim ~/;
+echo "Color + 42Header";
+cp .vimrc ~/;
+echo "Vimrc";
+cp .gitignore ~/;
+git config --global core.excludesfile ~/.gitignore;
+echo "Gitignore";
+
+echo "----- Finished -----";
+exit 0
