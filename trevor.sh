@@ -18,7 +18,6 @@ esac
 echo "----- Global -----";
 read -p 'Username: ' uservar;
 echo "export USER=$uservar" >> ~/.bashrc;
-exec bash;
 
 echo "----- Github -----";
 read -p 'Github username: ' guser;
@@ -33,6 +32,8 @@ echo "Vimrc";
 cp .gitignore ~/;
 git config --global core.excludesfile ~/.gitignore;
 echo "Gitignore";
+
+exec bash;
 
 echo "----- Finished -----";
 exit 0
