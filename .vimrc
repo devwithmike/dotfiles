@@ -25,7 +25,7 @@ se mouse+=a
 if (has("termguicolors"))
  set termguicolors
 endif
-colo monokai
+colo monokaitasty
 let g:gitgutter_map_keys = 0
 set updatetime=100
 
