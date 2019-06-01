@@ -19,11 +19,6 @@ echo "----- Global -----";
 read -p 'Username: ' uservar;
 echo "export USER=$uservar" >> ~/.zshrc;
 
-echo "----- Github -----";
-read -p 'Github username: ' guser;
-read -p 'Repo Name: ' repo;
-git clone "https://github.com/${guser}/${repo}" ~/Desktop/${repo}
-
 echo "----- Setup -----";
 cp -R .vim ~/;
 echo "Color + 42Header";
@@ -35,5 +30,16 @@ echo "Gitignore";
 
 source ~/.zshrc
 
+echo "----- Github -----";
+echo "Would you like to clone a repo?"
+read gbool;
+if [ "$gbool" = "y" ] || [ "$gbool" = "Y" ]
+then
+	read -p 'Github username: ' guser;
+	read -p 'Repo Name: ' repo;
+	git clone "https://github.com/${guser}/${repo}" ~/Desktop/${repo}
+else
+	echo "Cool Beans";
+fi
 echo "----- Finished -----";
 exit 0
