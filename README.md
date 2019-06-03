@@ -5,7 +5,7 @@
 This repo is used to install all my dotfiles and plugins/themes i like to use on a daily basis, and because i switch between PC's often.
 ### Installation
 ```
-git clone https://github.com/ziadhorat/dotfiles && cd dotfiles
+git clone https://github.com/MikeFMeyer/dotfiles && cd dotfiles
 sh trevor.sh
 ```
 Follow the on-screen instructions. (Linux/MacOS)
