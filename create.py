@@ -14,7 +14,10 @@ def create():
 	python_button.send_keys(sys.argv[2])
 	python_button =  browser.find_elements_by_xpath("//input[@name='commit']")[0]
 	python_button.click()
-
+	browser.get('https://github.com/new')
+	python_button = browser.find_elements_by_xpath("//*[@id="repository_name"]")
+	python_button.send_keys(folderName)
+	
 if __name__ == '__main__':
 	create()
 
