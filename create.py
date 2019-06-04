@@ -17,6 +17,8 @@ def create():
 	browser.get('https://github.com/new')
 	python_button = browser.find_elements_by_xpath("//*[@id="repository_name"]")
 	python_button.send_keys(folderName)
+	python_button = browser.find_elements_by_css_selector("#new_repository > div.js-with-permission-fields > button")
+	python_button.submit()
 	
 if __name__ == '__main__':
 	create()
