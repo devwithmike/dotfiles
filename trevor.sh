@@ -10,14 +10,14 @@ case $OS in
     osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to true';
     echo "DarkMode";
     defaults write com.apple.dock static-only -bool true; killall Dock;
-    cp .zshrc ~
+    cp .bashrc ~
     ;;
   *) ;;
 esac
 
 echo "----- Global -----";
 read -p 'Username: ' uservar;
-echo "export USER=$uservar" >> ~/.zshrc;
+echo "export USER=$uservar" >> ~/.bashrc;
 
 echo "----- Setup -----";
 cp -R .vim ~/;
@@ -27,8 +27,6 @@ echo "Vimrc";
 cp .gitignore ~/;
 git config --global core.excludesfile ~/.gitignore;
 echo "Gitignore";
-
-source ~/.zshrc
 
 echo "----- Github -----";
 echo "Would you like to clone a repo?"
