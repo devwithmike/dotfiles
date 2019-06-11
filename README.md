@@ -1,6 +1,7 @@
 # My dotfiles
 
 ## CAUTION - Contact me before using PLEASE
+## USE AT OWN RISK. IF YOU DON'T UNDERSTAND IT, ASK. I'M NOT RESPONSIBLE FOR THE USE OF THIS SCRIPT. 
 
 This repo is used to install all my dotfiles and plugins/themes i like to use on a daily basis, and because i switch between PC's often.
 ### Installation
