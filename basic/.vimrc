@@ -17,8 +17,6 @@ set cursorline
 set nobackup
 set noswapfile
 set colorcolumn=80
-set comments=sl:/*,mb:\ *,elx:\ */
-syntax on
-highlight ColorColumn ctermbg=240
+syntax=on
 
 colo monokaitasty
