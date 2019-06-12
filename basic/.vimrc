@@ -17,6 +17,6 @@ set cursorline
 set nobackup
 set noswapfile
 set colorcolumn=80
-syntax=on
+syntax on
 
 colo monokaitasty
