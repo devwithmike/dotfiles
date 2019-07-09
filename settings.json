@@ -1,0 +1,11 @@
+{
+	"workbench.iconTheme": "material-icon-theme",
+	"editor.autoClosingBrackets": "always",
+	"workbench.colorTheme": "Material Theme Ocean",
+	"editor.tabSize": 4,
+	"files.insertFinalNewline": true,
+	"prettier.useTabs": true,
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"editor.renderWhitespace": "all"
+}
