@@ -7,5 +7,6 @@
 	"prettier.useTabs": true,
 	"editor.insertSpaces": false,
 	"editor.detectIndentation": false,
-	"editor.renderWhitespace": "all"
+	"editor.renderWhitespace": "all",
+	"editor.rulers": [80]
 }
