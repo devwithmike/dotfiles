@@ -11,12 +11,8 @@ sh trevor.sh
 ```
 Follow the on-screen instructions. (Linux/MacOS)
 ## Features
-#### Unix
-Adds color to the man page
 #### MacOS
 DarkMode
-#### VimRC
-jj > Escape
 #### BashRC
 g > gcc -Wall -Werror -Wextra
 ## Plugins/Themes
